@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Certification" icon-name="custom:custom57">
+        <div class="slds-var-m-around_medium">
+            <template for:each={certificates} for:item="certificate">
+                <c-certification-tile
+                    class="slds-show slds-is-relative"
+                    key={certificate.Id}
+                    certificate={certificate}
+                ></c-certification-tile>
+            </template>
+        </div>
+
+    </lightning-card>
+</template>
